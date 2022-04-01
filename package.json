@@ -1,0 +1,35 @@
+{
+  "name": "@stdlib/regexp-decimal-number",
+  "version": "0.0.0",
+  "description": "Return a regular expression to match a decimal number.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/regexp-decimal-number.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "regex",
+    "regexp",
+    "re",
+    "regular",
+    "expression",
+    "match",
+    "capture",
+    "number",
+    "num",
+    "decimal",
+    "float",
+    "double"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
