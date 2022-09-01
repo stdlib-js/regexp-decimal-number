@@ -24,20 +24,30 @@ limitations under the License.
 
 > [Regular expression][mdn-regexp] to match a decimal number.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/regexp-decimal-number
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import reDecimalNumber from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-decimal-number@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { REGEXP, REGEXP_CAPTURE } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-decimal-number@esm/index.mjs';
+var reDecimalNumber = require( '@stdlib/regexp-decimal-number' );
 ```
 
 #### reDecimalNumber( \[options] )
@@ -62,7 +72,7 @@ The function accepts an `options` object with optional properties:
 By default, the function returns a regular expression which does not have any flags specified. To specify [flags][mdn-regexp-flags], set the `flags` option with a list of flags (which may be in any order).
 
 ```javascript
-import replace from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-replace@esm/index.mjs';
+var replace = require( '@stdlib/string-replace' );
 
 var RE_DECIMAL_NUMBER = reDecimalNumber({
     'flags': 'g'
@@ -149,13 +159,8 @@ var parts = reDecimalNumber.REGEXP_CAPTURE.exec( '1.234' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import reDecimalNumber from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-decimal-number@esm/index.mjs';
+```javascript
+var reDecimalNumber = require( '@stdlib/regexp-decimal-number' );
 
 var RE_DECIMAL_NUMBER = reDecimalNumber();
 
@@ -224,10 +229,6 @@ bool = RE_DECIMAL_NUMBER.test( 'beep' );
 
 bool = RE_DECIMAL_NUMBER.test( '' );
 // returns false
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -251,7 +252,7 @@ bool = RE_DECIMAL_NUMBER.test( '' );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
