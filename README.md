@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import reDecimalNumber from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-decimal-number@deno/mod.js';
+import reDecimalNumber from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-decimal-number@v0.2.2-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { REGEXP, REGEXP_CAPTURE } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-decimal-number@deno/mod.js';
+import { REGEXP, REGEXP_CAPTURE } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-decimal-number@v0.2.2-deno/mod.js';
 ```
 
 #### reDecimalNumber( \[options] )
@@ -161,7 +161,7 @@ var parts = reDecimalNumber.REGEXP_CAPTURE.exec( '1.234' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import reDecimalNumber from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-decimal-number@deno/mod.js';
+import reDecimalNumber from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-decimal-number@v0.2.2-deno/mod.js';
 
 var RE_DECIMAL_NUMBER = reDecimalNumber();
 
