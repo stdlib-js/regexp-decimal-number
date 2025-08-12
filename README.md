@@ -65,7 +65,7 @@ var reDecimalNumber = require( '@stdlib/regexp-decimal-number' );
 
 #### reDecimalNumber( \[options] )
 
-Returns a [regular expression][mdn-regexp] to match a decimal number. 
+Returns a [regular expression][mdn-regexp] to match a decimal number.
 
 ```javascript
 var RE_DECIMAL_NUMBER = reDecimalNumber();
@@ -112,7 +112,7 @@ out = RE_DECIMAL_NUMBER.exec( '' );
 
 #### reDecimalNumber.REGEXP
 
-[Regular expression][mdn-regexp] to match a decimal number. 
+[Regular expression][mdn-regexp] to match a decimal number.
 
 ```javascript
 var bool = reDecimalNumber.REGEXP.test( '2:3' );
@@ -121,7 +121,7 @@ var bool = reDecimalNumber.REGEXP.test( '2:3' );
 
 #### reDecimalNumber.REGEXP_CAPTURE
 
-[Regular expression][mdn-regexp] to capture characters matching a decimal number. 
+[Regular expression][mdn-regexp] to capture characters matching a decimal number.
 
 ```javascript
 var parts = reDecimalNumber.REGEXP_CAPTURE.exec( '1.234' );
@@ -150,13 +150,13 @@ var parts = reDecimalNumber.REGEXP_CAPTURE.exec( '1.234' );
     // returns false
     ```
 
--   The `REGEXP` regular expression is defined as 
+-   The `REGEXP` regular expression is defined as
 
     ```text
     /[-+]{0,1}[0-9]*\.[0-9]+/
     ```
 
--   The `REGEXP_CAPTURE` regular expression is defined as 
+-   The `REGEXP_CAPTURE` regular expression is defined as
 
     ```text
     /([-+]{0,1}[0-9]*\.[0-9]+)/
